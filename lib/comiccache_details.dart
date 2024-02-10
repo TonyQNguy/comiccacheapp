@@ -1,13 +1,16 @@
-import 'package:comicbookstore/constants.dart';
+//import 'package:comicbookstore/constants.dart';
 import 'package:flutter/material.dart';
-import 'package:comicbookstore/info.dart';
+import 'package:comiccacheapp/info.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class BookDetail extends StatelessWidget {
+Color kPrimaryColor = Colors.brown.shade200;
+Color kStarsColor = Color(0xFFFA6400);
+
+class ComicBookDetail extends StatelessWidget {
 
   final Book book;
 
-  BookDetail({required this.book});
+  ComicBookDetail({required this.book});
 
   @override
   Widget build(BuildContext context) {
@@ -86,7 +89,7 @@ class BookDetail extends StatelessWidget {
                           ),
 
                           Text(
-                            book.author.fullname,
+                            book.author.name,
                             style: GoogleFonts.catamaran(
                               fontSize: 18,
                               color: Colors.grey,
@@ -116,7 +119,7 @@ class BookDetail extends StatelessWidget {
                                 ),
 
                                 Text(
-                                  book.score,
+                                  book.rating,
                                   style: GoogleFonts.catamaran(
                                     fontSize: 16,
                                     color: Colors.grey,

@@ -176,20 +176,19 @@ Widget build(BuildContext context) {
                     ],
                   ),
                 ),
-
-                /*
+                
                 // Call To the Build Authors Function
+                /*
                 Container(
                   height: 100,
                   margin: const EdgeInsets.only(bottom: 16),
                   child: ListView(
                     physics: const BouncingScrollPhysics(),
                     scrollDirection: Axis.horizontal,
-                    children: /*buildAuthors(), */ 
+                    children: buildAuthors(),
                   ),
                 ),
                 */
-
               ],
             ),
           ),
@@ -356,7 +355,21 @@ List<Widget> buildNavigationItems() {
 
 Widget buildNavigationItem(NavigationItem item) { 
   return GestureDetector(
-    
+    onTap: () {
+        setState(() {
+          selectedItem = item;
+        });
+      },
+      child: Container(
+        width: 50,
+        child: Center(
+          child: Icon(
+            item.iconInfo,
+            color: selectedItem == item ? kPrimaryColor : Colors.grey[400],
+            size: 28,
+          ),
+        ),
+      ),
   );
 }
 
