@@ -113,7 +113,16 @@ Widget build(BuildContext context) {
             ),
           ),
 
-          // INSERT COMICS BOOKS CALL HERE
+          // Call to the Book Build
+          Expanded(
+            child: Container(
+              child: ListView(
+                physics: const BouncingScrollPhysics(),
+                scrollDirection: Axis.horizontal,
+                children: buildBooks(),
+              ),
+            ),
+          ),
 
           Container(
             decoration: const BoxDecoration(
@@ -231,15 +240,85 @@ Widget buildFilter(Filter item) {
   );
 }
 
+
+List<Widget> buildBooks() {
+  // basically doing the same as we did in filters but will the books instead
+  // we will do the same thing for authors also
+  List<Widget> list = comics.asMap().entries.map((entry) {
+    int index = entry.key;
+    Book book = entry.value;
+    return buildBook(book, index);
+  }).toList();
+  return list;
+}
+
+Widget buildBook(Book book, int index) {  // change the parameters
+  return GestureDetector(
+    onTap: () {
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => ComicBookDetail(book: book)), // need to add book variable to details, make sure to initalize
+      );
+    },
+    child: Container(
+      margin: EdgeInsets.only(right: 32, left: index == 0 ? 16 : 0, bottom: 8),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: <Widget>[
+
+          Expanded(
+            child: Container(
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.3),
+                    spreadRadius: 6,  // Reduced spread radius for a softer shadow
+                    blurRadius: 10,  // Reduced blur radius for a softer shadow
+                    offset: const Offset(0, 3),
+                  ),
+                ],
+                borderRadius: BorderRadius.circular(12),  // Added border radius for rounded corners
+              ),
+              margin: const EdgeInsets.only(bottom: 16, top: 24),
+              child: Hero(
+                tag: book.title,
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(12),  // Match the border radius
+                  child: Image.asset(
+                    book.image,
+                    fit: BoxFit.cover,  // Use BoxFit.cover for better image scaling
+                  ),
+                ),
+              ),
+            ),
+          ),
+
+          Text(
+            book.title,
+            style: GoogleFonts.catamaran(
+              fontSize: 18,  // Increased font size for the book title
+              fontWeight: FontWeight.bold,
+              color: Colors.black,  // Adjusted color for better visibility
+            ),
+          ),
+
+          Text(
+            "by ${book.author.name}",  // Added "by" before the author's name for clarity
+            style: TextStyle(
+              fontSize: 14,
+              color: Colors.grey[600],  // Adjusted color for better visibility
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+
+        ],
+      ),
+    ),
+  );
+}
+
 /*
-List<Widget> buildBooks(){
-
-}
-
-Widget buildBook(Filter item) {  // change the parameters
-
-}
-
 List<Widget> buildAuthors(){
 
 }
