@@ -177,7 +177,16 @@ Widget build(BuildContext context) {
                   ),
                 ),
 
-                // INSERT AUTHORS CALL HERE
+                // Call To the Build Authors Function
+                Container(
+                  height: 100,
+                  margin: const EdgeInsets.only(bottom: 16),
+                  child: ListView(
+                    physics: const BouncingScrollPhysics(),
+                    scrollDirection: Axis.horizontal,
+                    children: /*buildAuthors(), */ 
+                  ),
+                ),
 
               ],
             ),
