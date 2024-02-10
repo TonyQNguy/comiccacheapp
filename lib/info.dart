@@ -41,10 +41,10 @@ List<Book> getBooks() {
       Author(
         "Stan Lee", 
         176,
-        "/path/to/authorimage"
+        "assets/authors/StanLee.jpg"
       ),
       "4.67",
-      "/path/to/comicimage"
+      "assets/comics/AmazingSpiderman.jpg"
     ),
 
     Book( 

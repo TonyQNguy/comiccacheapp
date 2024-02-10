@@ -177,6 +177,7 @@ Widget build(BuildContext context) {
                   ),
                 ),
 
+                /*
                 // Call To the Build Authors Function
                 Container(
                   height: 100,
@@ -187,7 +188,8 @@ Widget build(BuildContext context) {
                     children: /*buildAuthors(), */ 
                   ),
                 ),
-
+                */
+                
               ],
             ),
           ),
