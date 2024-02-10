@@ -10,7 +10,7 @@ class NavigationItem {
 
 }
 
-List<NavigationItem> getNavigationItemList(){
+List<NavigationItem> getNavigationItem(){
   return <NavigationItem>[
     NavigationItem(Icons.home),
     NavigationItem(Icons.book),
