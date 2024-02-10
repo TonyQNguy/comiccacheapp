@@ -32,7 +32,7 @@ class _ComicBookStoreState extends State<ComicBookStore> {
       selectedFilter = filters[0];
       selectedItem = navigationItems[0];
     });
-  } // initState
+  } // initState 
 
 
   // we will split up the front page into multiple blocks to make it easier to build by collaboration
