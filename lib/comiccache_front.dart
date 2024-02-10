@@ -355,8 +355,9 @@ List<Widget> buildNavigationItems() {
 }
 
 Widget buildNavigationItem(NavigationItem item) { 
-
+  return GestureDetector(
+    
+  );
 }
-
 
 }
