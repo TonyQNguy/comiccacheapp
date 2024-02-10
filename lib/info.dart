@@ -3,11 +3,8 @@
 import 'package:flutter/material.dart';
 
 class NavigationItem {
-
   IconData iconInfo;
-
   NavigationItem(this.iconInfo);
-
 }
 
 List<NavigationItem> getNavigationItem(){
@@ -164,23 +161,16 @@ List<Book> getBooks() {
       "/path/to/comicimage"
     ),
 
-
-
-
-
-
   ]; // <Book>
 
 }
 
 class Author { 
-  
   String name;
   int numBooks;
   String image; 
 
   Author(this.name, this.numBooks, this.image);
-
 }
 
 // implement getAuthor here
@@ -250,11 +240,8 @@ List<Author> getAuthors() {
 }
 
 class Filter { 
-
   String name;
-
   Filter(this.name);
-
 }
 
 // implement getFilter here
