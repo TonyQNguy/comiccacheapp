@@ -345,7 +345,4 @@ Widget buildNavigationItem(Filter item) {
 }
 */
 
-
-
-
 }
