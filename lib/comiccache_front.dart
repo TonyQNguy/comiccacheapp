@@ -303,7 +303,14 @@ Widget buildBook(Book book, int index) {  // change the parameters
             ),
           ),
 
-
+          Text(
+            "by ${book.author.name}",  // Added "by" before the author's name for clarity
+            style: TextStyle(
+              fontSize: 14,
+              color: Colors.grey[600],  // Adjusted color for better visibility
+              fontWeight: FontWeight.bold,
+            ),
+          ),
 
         ],
       ),
