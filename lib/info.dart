@@ -19,5 +19,16 @@ List<NavigationItem> getNavigationItemList(){
   ];
 }
 
+class Book { 
+
+  String title;
+  String description;
+  String rating;
+  String image
+  Author author; // implement author later 
+
+  Book(this.title, this.description, this.author, this.rating, this.image);
+  
+}
 
 
