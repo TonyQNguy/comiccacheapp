@@ -51,7 +51,7 @@ Widget build(BuildContext context) {
         ),
         actions: [
           Padding(
-            padding: EdgeInsets.only(right: 16,),
+            padding:  const EdgeInsets.only(right: 16,),
             child: Icon(
               Icons.search,
               color: Colors.grey[400],
@@ -85,12 +85,14 @@ Widget build(BuildContext context) {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 
-                Text(
-                  "Find New Comics",
-                  style: GoogleFonts.catamaran(
-                    fontWeight: FontWeight.w900,
-                    fontSize: 40,
-                    height: 1,
+                Center(
+                  child: Text(
+                    "Find New Comics",
+                    style: GoogleFonts.catamaran(
+                      fontWeight: FontWeight.w700,
+                      fontSize: 40,
+                      height: 1,
+                    ),
                   ),
                 ),
 
@@ -98,8 +100,15 @@ Widget build(BuildContext context) {
                   height: 16,
                 ),
 
-                // INSERT FILTER CALL HERE
-
+                // Call to the Filter Build
+                Padding(
+                  padding: const EdgeInsets.only(right: 10),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: buildFilters(),
+                  ),
+                ),
+  
               ],
             ),
           ),
@@ -174,15 +183,55 @@ Widget build(BuildContext context) {
   }
 
 
+// First work on the filters and then implement into the main body
+List<Widget> buildFilters() {
+  // this utilizes the map function to iterate over the filters 
+  // and applies the buildFilter to each element and then converts to a list
+  List<Widget> list = filters.map((filter) => buildFilter(filter)).toList();
+  return list;
+}
+
+Widget buildFilter(Filter item) {
+  // want to use a gesture detector
+  return GestureDetector(
+    onTap: () {
+      setState(() {
+        selectedFilter = item;
+      });
+    },
+    child: Container(
+      height: 60,  // adjusted height for better visibility
+      padding: const EdgeInsets.symmetric(horizontal: 20),  // increased horizontal padding
+      // puts the filters into a "stack"
+      child: Stack(
+        children: <Widget>[
+          Align(
+            alignment: Alignment.bottomLeft,
+            child: Container(
+              width: 40,  // increased width for the indicator
+              height: 4,  // increased height for the indicator
+              color: selectedFilter == item ? kPrimaryColor : Colors.transparent,
+            ),
+          ),
+          // centers the text
+          Center(
+            child: Text(
+              item.name,
+              style: GoogleFonts.catamaran(
+                color: selectedFilter == item ? kPrimaryColor : Colors.grey[600],  // adjusted color for better visibility
+                fontSize: 14,  // increased font size for better visibility
+                fontWeight: FontWeight.bold,
+                letterSpacing: 2,  // reduced letter spacing
+              ),
+            ),
+          ),
+        ],
+      ),
+    ),
+  );
+}
+
 /*
-List<Widget> buildFilters(){
-
-}
-
-Widget buildFilter(Filter item) {  // change the parameters
-
-}
-
 List<Widget> buildBooks(){
 
 }
