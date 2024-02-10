@@ -32,6 +32,146 @@ class Book {
 }
 
 //implement getBook here
+List<Book> getBooks() { 
+  return <Book> [
+    Book( 
+      // BookName, Description
+      "The Amazing Spiderman",
+      "Desc. of Spiderman...",
+      Author(
+        "Stan Lee", 
+        176,
+        "/path/to/authorimage"
+      ),
+      "4.67",
+      "/path/to/comicimage"
+    ),
+
+    Book( 
+      // BookName, Description
+      "The Amazing Spiderman",
+      "Desc. of Spiderman...",
+      Author(
+        "Stan Lee", 
+        176,
+        "/path/to/authorimage"
+      ),
+      "4.67",
+      "/path/to/comicimage"
+    ),
+
+    Book( 
+      // BookName, Description
+      "The Amazing Spiderman",
+      "Desc. of Spiderman...",
+      Author(
+        "Stan Lee", 
+        176,
+        "/path/to/authorimage"
+      ),
+      "4.67",
+      "/path/to/comicimage"
+    ),
+
+    Book( 
+      // BookName, Description
+      "The Amazing Spiderman",
+      "Desc. of Spiderman...",
+      Author(
+        "Stan Lee", 
+        176,
+        "/path/to/authorimage"
+      ),
+      "4.67",
+      "/path/to/comicimage"
+    ),
+
+    Book( 
+      // BookName, Description
+      "The Amazing Spiderman",
+      "Desc. of Spiderman...",
+      Author(
+        "Stan Lee", 
+        176,
+        "/path/to/authorimage"
+      ),
+      "4.67",
+      "/path/to/comicimage"
+    ),
+
+    Book( 
+      // BookName, Description
+      "The Amazing Spiderman",
+      "Desc. of Spiderman...",
+      Author(
+        "Stan Lee", 
+        176,
+        "/path/to/authorimage"
+      ),
+      "4.67",
+      "/path/to/comicimage"
+    ),
+
+    Book( 
+      // BookName, Description
+      "The Amazing Spiderman",
+      "Desc. of Spiderman...",
+      Author(
+        "Stan Lee", 
+        176,
+        "/path/to/authorimage"
+      ),
+      "4.67",
+      "/path/to/comicimage"
+    ),
+
+    Book( 
+      // BookName, Description
+      "The Amazing Spiderman",
+      "Desc. of Spiderman...",
+      Author(
+        "Stan Lee", 
+        176,
+        "/path/to/authorimage"
+      ),
+      "4.67",
+      "/path/to/comicimage"
+    ),
+
+    Book( 
+      // BookName, Description
+      "The Amazing Spiderman",
+      "Desc. of Spiderman...",
+      Author(
+        "Stan Lee", 
+        176,
+        "/path/to/authorimage"
+      ),
+      "4.67",
+      "/path/to/comicimage"
+    ),
+
+    Book( 
+      // BookName, Description
+      "The Amazing Spiderman",
+      "Desc. of Spiderman...",
+      Author(
+        "Stan Lee", 
+        176,
+        "/path/to/authorimage"
+      ),
+      "4.67",
+      "/path/to/comicimage"
+    ),
+
+
+
+
+
+
+  ]; // <Book>
+
+}
 
 class Author { 
   
