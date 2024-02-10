@@ -329,7 +329,8 @@ Widget buildBook(Book book, int index) {  // change the parameters
   );
 }
 
-
+// we will do author last since navigation is more necessary
+/*
 List<Widget> buildAuthors(){
   // did the same mapping for author as we did for the comic book
   List<Widget> list = authors.asMap().entries.map((entry) {
@@ -344,15 +345,18 @@ List<Widget> buildAuthors(){
 Widget buildAuthor(Author author, int index) {  // change the parameters
 
 }
-
-/*
-List<Widget> buildNavigationItems(){
-
-}
-
-Widget buildNavigationItem(Filter item) { 
-
-}
 */
+
+
+List<Widget> buildNavigationItems() {
+  // the same mapping as we did for filter
+  List<Widget> list = navigationItems.map((navigationItem) => buildNavigationItem(navigationItem)).toList();
+  return list;
+}
+
+Widget buildNavigationItem(NavigationItem item) { 
+
+}
+
 
 }
