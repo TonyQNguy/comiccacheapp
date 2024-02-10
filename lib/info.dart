@@ -184,6 +184,70 @@ class Author {
 }
 
 // implement getAuthor here
+List<Author> getAuthors() { 
+  return <Author> [
+    Author(
+      "Stan Lee",
+      176,
+      "/path/to/authorimage",
+    ),
+
+    Author(
+      "Stan Lee",
+      176,
+      "/path/to/authorimage",
+    ),
+
+    Author(
+      "Stan Lee",
+      176,
+      "/path/to/authorimage",
+    ),
+
+    Author(
+      "Stan Lee",
+      176,
+      "/path/to/authorimage",
+    ),
+
+    Author(
+      "Stan Lee",
+      176,
+      "/path/to/authorimage",
+    ),
+
+    Author(
+      "Stan Lee",
+      176,
+      "/path/to/authorimage",
+    ),
+
+    Author(
+      "Stan Lee",
+      176,
+      "/path/to/authorimage",
+    ),
+
+    Author(
+      "Stan Lee",
+      176,
+      "/path/to/authorimage",
+    ),
+
+    Author(
+      "Stan Lee",
+      176,
+      "/path/to/authorimage",
+    ),
+
+    Author(
+      "Stan Lee",
+      176,
+      "/path/to/authorimage",
+    ),
+
+  ];
+}
 
 class Filter { 
 
