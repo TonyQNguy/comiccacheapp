@@ -258,5 +258,11 @@ class Filter {
 }
 
 // implement getFilter here
-
+List<Filter> getFilters(){
+  return <Filter>[
+    Filter("ORIGINALS"),
+    Filter("LATEST"),
+    Filter("UPCOMING"),
+  ];
+}
 
