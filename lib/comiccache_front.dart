@@ -189,7 +189,7 @@ Widget build(BuildContext context) {
                   ),
                 ),
                 */
-                
+
               ],
             ),
           ),
@@ -329,15 +329,23 @@ Widget buildBook(Book book, int index) {  // change the parameters
   );
 }
 
-/*
+
 List<Widget> buildAuthors(){
+  // did the same mapping for author as we did for the comic book
+  List<Widget> list = authors.asMap().entries.map((entry) {
+  int index = entry.key;
+  Author author = entry.value;
+  return buildAuthor(author, index);
+  }).toList();
+  return list; 
+}
+
+
+Widget buildAuthor(Author author, int index) {  // change the parameters
 
 }
 
-Widget buildAuthor(Filter item) {  // change the parameters
-
-}
-
+/*
 List<Widget> buildNavigationItems(){
 
 }
