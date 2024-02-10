@@ -45,7 +45,7 @@ class _ComicBookStoreState extends State<ComicBookStore> {
 
   }
 
-  Widget buildFilter(Filter item) { 
+  Widget buildFilter(Filter item) {  // change the parameters
 
   }
 
@@ -53,7 +53,7 @@ class _ComicBookStoreState extends State<ComicBookStore> {
 
   }
 
-  Widget buildBook(Filter item) { 
+  Widget buildBook(Filter item) {  // change the parameters
 
   }
 
@@ -61,9 +61,17 @@ class _ComicBookStoreState extends State<ComicBookStore> {
 
   }
 
-  Widget buildAuthor(Filter item) { 
+  Widget buildAuthor(Filter item) {  // change the parameters
 
   }
+
+  List<Widget> buildNavigationItems(){
+
+    }
+
+  Widget buildNavigationItem(Filter item) { 
+
+    }
 
 
 
