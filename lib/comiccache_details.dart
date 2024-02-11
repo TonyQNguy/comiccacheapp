@@ -184,7 +184,7 @@ class ComicBookDetail extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Text(
-                                  "Want to read",
+                                  "Add to Favoritesß",
                                   style: GoogleFonts.catamaran(
                                     fontSize: 18,
                                     color: Colors.white,
@@ -228,7 +228,7 @@ class ComicBookDetail extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Text(
-                                  "Get a copy",
+                                  "Buy",
                                   style: GoogleFonts.catamaran(
                                     fontSize: 18,
                                     color: Colors.grey,
