@@ -178,7 +178,7 @@ Widget build(BuildContext context) {
                 ),
                 
                 // Call To the Build Authors Function
-                /*
+                
                 Container(
                   height: 100,
                   margin: const EdgeInsets.only(bottom: 16),
@@ -188,7 +188,7 @@ Widget build(BuildContext context) {
                     children: buildAuthors(),
                   ),
                 ),
-                */
+                
               ],
             ),
           ),
@@ -329,7 +329,7 @@ Widget buildBook(Book book, int index) {  // change the parameters
 }
 
 // we will do author last since navigation is more necessary
-/*
+
 List<Widget> buildAuthors(){
   // did the same mapping for author as we did for the comic book
   List<Widget> list = authors.asMap().entries.map((entry) {
@@ -342,9 +342,91 @@ List<Widget> buildAuthors(){
 
 
 Widget buildAuthor(Author author, int index) {  // change the parameters
+  return Container(
+      decoration: BoxDecoration(
+        color: Colors.grey[200],
+        borderRadius: const BorderRadius.all(
+          Radius.circular(15),
+        ),
+      ),
+      padding: EdgeInsets.all(12),
+      margin: EdgeInsets.only(right: 16, left: index == 0 ? 16 : 0),
+      width: 255,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: <Widget>[
 
+          Card(
+            elevation: 4,
+            margin: const EdgeInsets.all(0),
+            clipBehavior: Clip.antiAlias,
+            shape: const RoundedRectangleBorder(
+              borderRadius: BorderRadius.all(
+                Radius.circular(15),
+              ),
+            ),
+            child: Container(
+              width: 75,
+              height: 75,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage(author.image), 
+                  fit: BoxFit.cover,
+                ),
+              ),
+            ),
+          ),
+
+          const SizedBox(
+            width: 12,
+          ),
+
+          Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+
+              Text(
+                author.name,
+                style: GoogleFonts.catamaran(
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+
+              Row(
+                children: [
+
+                  const Icon(
+                    Icons.library_books,
+                    color: Colors.grey,
+                    size: 14,
+                  ),
+
+                  const SizedBox(
+                    width: 8,
+                  ),
+                  
+                  Text(
+                    author.numBooks.toString() + " books",
+                    style: const TextStyle(
+                      fontSize: 14,
+                      color: Colors.grey,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+
+                ],
+              ),
+
+            ],
+          ),
+
+        ],
+      ),
+    );
 }
-*/
+
 
 
 List<Widget> buildNavigationItems() {
