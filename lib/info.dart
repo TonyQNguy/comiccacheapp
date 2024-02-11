@@ -47,117 +47,117 @@ List<Book> getBooks() {
     Book( 
       // BookName, Description
       "Daredevil",
-      "Desc. of Spiderman...",
+      "Desc. of Daredevil...",
       Author(
         "Alan Moore", 
         176,
         "assets/authors/AlanMoore.jpg"
       ),
-      "4.67",
+      "4.30",
       "assets/comics/Daredevil.jpg"
     ),
 
     Book( 
       // BookName, Description
       "ExMachina",
-      "Desc. of Spiderman...",
+      "Desc. of ExMachina...",
       Author(
         "Brian Vaughan", 
         176,
         "assets/authors/BrianVaughan.jpg"
       ),
-      "4.67",
+      "3.98",
       "assets/comics/ExMachina.jpg"
     ),
 
     Book( 
       // BookName, Description
       "Fantastic Four",
-      "Desc. of Spiderman...",
+      "Desc. of Fantastic...",
       Author(
         "Frank Miller", 
         176,
         "assets/authors/FrankMiller.jpg"
       ),
-      "4.67",
+      "4.13",
       "assets/comics/FantasticFour.jpg"
     ),
 
     Book( 
       // BookName, Description
       "Irredeemable",
-      "Desc. of Spiderman...",
+      "Desc. of Irredeemable...",
       Author(
         "Geoff Johns", 
         176,
-        "assets/authors/GeoffJohns"
+        "assets/authors/GeoffJohns.jpg"
       ),
-      "4.67",
+      "3.50",
       "assets/comics/Irredeemable.jpg"
     ),
 
     Book( 
       // BookName, Description
       "New X-Men",
-      "Desc. of Spiderman...",
+      "Desc. of New X-Men...",
       Author(
         "Grant Morrison", 
         176,
-        "assets/authors/GrantMorrison"
+        "assets/authors/GrantMorrison.jpg"
       ),
-      "4.67",
+      "4.60",
       "assets/comics/NewXMen.jpg"
     ),
 
     Book( 
       // BookName, Description
       "Planetary",
-      "Desc. of Spiderman...",
+      "Desc. of Planetary...",
       Author(
         "Jack Kirby", 
         176,
-        "assets/authors/JackKirby"
+        "assets/authors/JackKirby.jpg"
       ),
-      "4.67",
+      "4.30",
       "assets/comics/Planetary.jpg"
     ),
 
     Book( 
       // BookName, Description
       "The Swamp Thing",
-      "Desc. of Spiderman...",
+      "Desc. of The Swamp Thing...",
       Author(
         "Mark Waid", 
         176,
         "assets/authors/MarkWaid"
       ),
-      "4.67",
+      "4.10",
       "assets/comics/SwampThing.jpg"
     ),
 
     Book( 
       // BookName, Description
       "The Flash",
-      "Desc. of Spiderman...",
+      "Desc. of The Flash...",
       Author(
         "Neil Gaiman", 
         176,
         "assets/authors/NeilGaiman"
       ),
-      "4.67",
+      "4.90",
       "assets/comics/TheFlash.jpg"
     ),
 
     Book( 
       // BookName, Description
       "The Sandman",
-      "Desc. of Spiderman...",
+      "Desc. of The Sandman...",
       Author(
         "Warren Ellis", 
         176,
-        "assets/authors/WarrenEllis"
+        "assets/authors/WarrenEllis.jpg"
       ),
-      "4.67",
+      "4.78",
       "assets/comics/TheSandman.jpg"
     ),
 
@@ -184,55 +184,55 @@ List<Author> getAuthors() {
 
     Author(
       "Alan Moore",
-      176,
+      60,
       "assets/authors/AlanMoore.jpg",
     ),
 
     Author(
       "Frank Miller",
-      176,
+      130,
       "assets/authors/FrankMiller.jpg",
     ),
 
     Author(
       "Geoff Johns",
-      176,
+      111,
       "assets/authors/GeoffJohns.jpg",
     ),
 
     Author(
       "Grant Morrison",
-      176,
+      59,
       "assets/authors/GrantMorrison.jpg",
     ),
 
     Author(
       "Jack Kirby",
-      176,
+      265,
       "assets/authors/JackKirby.jpg",
     ),
 
     Author(
       "Mark Waid",
-      176,
+      131,
       "assets/authors/MarkWaid.jpg",
     ),
 
     Author(
       "Neil Gaiman",
-      176,
+      89,
       "assets/authors/NeilGaiman.jpg",
     ),
 
     Author(
       "Brian Vaughan",
-      176,
+      120,
       "assets/authors/BrianVaughan.jpg",
     ),
 
     Author(
       "Warren Ellis",
-      176,
+      174,
       "assets/authors/WarrenEllis.jpg",
     ),
 
