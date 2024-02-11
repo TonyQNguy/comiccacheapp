@@ -46,119 +46,119 @@ List<Book> getBooks() {
 
     Book( 
       // BookName, Description
-      "The Amazing Spiderman",
+      "Daredevil",
       "Desc. of Spiderman...",
       Author(
-        "Stan Lee", 
+        "Alan Moore", 
         176,
-        "/path/to/authorimage"
+        "assets/authors/AlanMoore.jpg"
       ),
       "4.67",
-      "/path/to/comicimage"
+      "assets/comics/Daredevil.jpg"
     ),
 
     Book( 
       // BookName, Description
-      "The Amazing Spiderman",
+      "ExMachina",
       "Desc. of Spiderman...",
       Author(
-        "Stan Lee", 
+        "Brian Vaughan", 
         176,
-        "/path/to/authorimage"
+        "assets/authors/BrianVaughan.jpg"
       ),
       "4.67",
-      "/path/to/comicimage"
+      "assets/comics/ExMachina.jpg"
     ),
 
     Book( 
       // BookName, Description
-      "The Amazing Spiderman",
+      "Fantastic Four",
       "Desc. of Spiderman...",
       Author(
-        "Stan Lee", 
+        "Frank Miller", 
         176,
-        "/path/to/authorimage"
+        "assets/authors/FrankMiller.jpg"
       ),
       "4.67",
-      "/path/to/comicimage"
+      "assets/comics/FantasticFour.jpg"
     ),
 
     Book( 
       // BookName, Description
-      "The Amazing Spiderman",
+      "Irredeemable",
       "Desc. of Spiderman...",
       Author(
-        "Stan Lee", 
+        "Geoff Johns", 
         176,
-        "/path/to/authorimage"
+        "assets/authors/GeoffJohns"
       ),
       "4.67",
-      "/path/to/comicimage"
+      "assets/comics/Irredeemable.jpg"
     ),
 
     Book( 
       // BookName, Description
-      "The Amazing Spiderman",
+      "New X-Men",
       "Desc. of Spiderman...",
       Author(
-        "Stan Lee", 
+        "Grant Morrison", 
         176,
-        "/path/to/authorimage"
+        "assets/authors/GrantMorrison"
       ),
       "4.67",
-      "/path/to/comicimage"
+      "assets/comics/NewXMen.jpg"
     ),
 
     Book( 
       // BookName, Description
-      "The Amazing Spiderman",
+      "Planetary",
       "Desc. of Spiderman...",
       Author(
-        "Stan Lee", 
+        "Jack Kirby", 
         176,
-        "/path/to/authorimage"
+        "assets/authors/JackKirby"
       ),
       "4.67",
-      "/path/to/comicimage"
+      "assets/comics/Planetary.jpg"
     ),
 
     Book( 
       // BookName, Description
-      "The Amazing Spiderman",
+      "The Swamp Thing",
       "Desc. of Spiderman...",
       Author(
-        "Stan Lee", 
+        "Mark Waid", 
         176,
-        "/path/to/authorimage"
+        "assets/authors/MarkWaid"
       ),
       "4.67",
-      "/path/to/comicimage"
+      "assets/comics/SwampThing.jpg"
     ),
 
     Book( 
       // BookName, Description
-      "The Amazing Spiderman",
+      "The Flash",
       "Desc. of Spiderman...",
       Author(
-        "Stan Lee", 
+        "Neil Gaiman", 
         176,
-        "/path/to/authorimage"
+        "assets/authors/NeilGaiman"
       ),
       "4.67",
-      "/path/to/comicimage"
+      "assets/comics/TheFlash.jpg"
     ),
 
     Book( 
       // BookName, Description
-      "The Amazing Spiderman",
+      "The Sandman",
       "Desc. of Spiderman...",
       Author(
-        "Stan Lee", 
+        "Warren Ellis", 
         176,
-        "/path/to/authorimage"
+        "assets/authors/WarrenEllis"
       ),
       "4.67",
-      "/path/to/comicimage"
+      "assets/comics/TheSandman.jpg"
     ),
 
   ]; // <Book>
