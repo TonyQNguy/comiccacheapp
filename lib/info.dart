@@ -179,61 +179,61 @@ List<Author> getAuthors() {
     Author(
       "Stan Lee",
       176,
-      "/path/to/authorimage",
+      "assets/authors/StanLee.jpg",
     ),
 
     Author(
-      "Stan Lee",
+      "Alan Moore",
       176,
-      "/path/to/authorimage",
+      "assets/authors/AlanMoore.jpg",
     ),
 
     Author(
-      "Stan Lee",
+      "Frank Miller",
       176,
-      "/path/to/authorimage",
+      "assets/authors/FrankMiller.jpg",
     ),
 
     Author(
-      "Stan Lee",
+      "Geoff Johns",
       176,
-      "/path/to/authorimage",
+      "assets/authors/GeoffJohns.jpg",
     ),
 
     Author(
-      "Stan Lee",
+      "Grant Morrison",
       176,
-      "/path/to/authorimage",
+      "assets/authors/GrantMorrison.jpg",
     ),
 
     Author(
-      "Stan Lee",
+      "Jack Kirby",
       176,
-      "/path/to/authorimage",
+      "assets/authors/JackKirby.jpg",
     ),
 
     Author(
-      "Stan Lee",
+      "Mark Waid",
       176,
-      "/path/to/authorimage",
+      "assets/authors/MarkWaid.jpg",
     ),
 
     Author(
-      "Stan Lee",
+      "Neil Gaiman",
       176,
-      "/path/to/authorimage",
+      "assets/authors/NeilGaiman.jpg",
     ),
 
     Author(
-      "Stan Lee",
+      "Brian Vaughan",
       176,
-      "/path/to/authorimage",
+      "assets/authors/BrianVaughan.jpg",
     ),
 
     Author(
-      "Stan Lee",
+      "Warren Ellis",
       176,
-      "/path/to/authorimage",
+      "assets/authors/WarrenEllis.jpg",
     ),
 
   ];
